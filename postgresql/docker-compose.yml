@@ -9,7 +9,7 @@ services:
       POSTGRES_PASSWORD: labpass123
       TZ: Asia/Jakarta
     ports:
-      - "5432:5432"
+      - "5438:5432"
     volumes:
       - pg-data:/var/lib/postgresql/data
       - ./init:/docker-entrypoint-initdb.d:ro
